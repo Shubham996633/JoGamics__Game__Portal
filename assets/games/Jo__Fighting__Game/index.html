@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo__Fighting__Game</title>
+
+
+            <!-- Favicons -->
+
+
+    <link rel="shortcut icon" href="assets/img/icons8-katana-50.png" type="image/x-icon">
+          <!-- Fonts Google -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+            <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <main class="main">
+
+    <section class="home section start-game" id="home">
+      
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Welcome to,<br> Sword Fighting Game <br> Game
+                </h1>
+                <p class="home__description" >
+                    Simple Two Player Game <br>
+
+                    <b>Controls</b> :<br>
+                    <div class="controls">
+                     For Player 1 --<br> 
+                    Press 'A/a' for Moving left<br>
+                    Press 'D/d' for Moving right<br>
+                    Press 'W/w' for Jump<br>
+                    Press 'Spacebar' for Attack<br>
+
+                    <br>
+                    For Player 2 --<br> 
+                    Press 'Lef-Arrow' for Moving left<br>
+                    Press 'Right-Arrow' for Moving right<br>
+                    Press 'Up-Arrow' for Jump<br>
+                    Press 'Down-Arrow' for Attack<br>
+                </div>
+                       
+
+        
+        
+                </p>
+
+                <div class="home__search">
+                          
+                        <button class="button start-create">Lets begin</button>
+                        
+                <button class="button read-docs">Read Docs</button>
+
+                       
+                     
+                </div>
+
+              
+             
+            </div>
+            <div class="home__images">
+
+                <div class="home__img">
+                    <img src="assets/img/samurai.png" alt="">
+                </div>
+            </div>
+        
+            
+        </div>
+        
+
+    </section>
+
+
+    <section class="home section end-game" id="home">
+          
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title home-end-title">
+                    <br> Simple Fighting <br> Game
+                </h1>
+                <p class="home__description" >
+                    <h1 class="game__result">
+                        <span class="result">You Lose</span><br>
+
+                    </h1>
+
+                    
+                    
+                       
+
+        
+        
+                </p>
+
+                <div class="home__search">
+                          <br>
+                        <button class="button try-again" onClick="window.location.reload()">Try Again</button>
+                        
+
+                       
+                     
+                </div>
+
+              
+             
+            </div>
+
+            <div class="home__images">
+
+                <div class="home__img home-end-image">
+                    <img src="assets/img/samurai.png" alt="" class="end-image">
+                </div>
+            </div>
+        
+            
+        </div>
+        
+
+    </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- red container div -->
+  <div style="position: relative;" class="fighter">
+    <!-- smaller red container div -->
+    <div
+      style="
+        position: absolute;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+        max-width: 1024px;
+        margin-left: .6rem;
+      "
+    >
+      <!-- player health -->
+      <div
+        style="
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          border-top: 4px solid white;
+          border-left: 4px solid white;
+          border-bottom: 4px solid white;
+        "
+      >
+        <div style="background-color: red; height: 30px; width: 100%;"></div>
+        <div
+          id="playerHealth"
+          style="
+            position: absolute;
+            background: #818CF8;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+          "
+        ></div>
+      </div>
+
+      <!-- timer -->
+      <div
+        id="timer"
+        style="
+          background-color: black;
+          width: 100px;
+          height: 50px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white
+          ;
+          border: 4px solid white;
+          font-family: 'Press Start 2P', cursive;
+        
+
+        "
+      >
+        10
+      </div>
+      <!-- enemy health -->
+      <div
+        style="
+          position: relative;
+          width: 100%;
+
+          border-top: 4px solid white;
+          border-right: 4px solid white;
+          border-bottom: 4px solid white;
+
+        "
+      >
+        <div style="background-color: red; height: 30px"></div>
+        <div
+          id="enemyHealth"
+          style="
+            position: absolute;
+            background: #818CF8;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          "
+        ></div>
+      </div>
+      <div></div>
+    </div>
+
+    <div id ="displayText" style="position: absolute; color: white;  align-items: center; justify-content: center;
+    top: 0; right: 0; bottom: 0; left: 0; display: none; font-family: 'Press Start 2P', cursive;">Tie</div>
+    
+    <canvas></canvas>
+  </div>
+
+
+          <!-- Sounds -->
+
+    <audio src="assets/sound/attack.mp3" class="sword"></audio>
+    <audio src="assets/sound/fireblast.mp3" class="sword-end"></audio>
+
+
+            <!-- SweetAlert JS -->
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+
+
+    
+
+            <!-- Gsap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <!-- Classes JS -->
+
+    <script src="assets/js/classess.js"></script>
+    
+
+            <!-- Main JS -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
