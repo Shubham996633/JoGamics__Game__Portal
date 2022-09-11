@@ -8,6 +8,45 @@ const scoreEl = document.querySelector('#scoreEl')
 const startGameBtn = document.querySelector('#startGameBtn')
 const modelEl = document.querySelector('#modalEl')
 const bigScoreEl = document.querySelector('#bigScoreEl')
+const bigsound = document.querySelector('.sound-big')
+const smallsound = document.querySelector('.sound-small')
+const endSound = document.querySelector('.sound-end')
+
+
+const gamePlay = document.querySelector('.game__play')
+
+const mainScreen = document.querySelector('.start-game')
+const endScreen = document.querySelector('.end-game')
+const start = document.querySelector('.start-create')
+
+
+var widths = [0, 999, 3840];
+
+function resizeFn() {
+    if (window.innerWidth<widths[1]) {
+       
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Your Screen Size must be greator than 999px to run the Game',
+            footer: 'Please Try on a device whose width Greator than 999px '
+          })
+
+
+
+
+    }else{
+        setTimeout(() => {
+            document.querySelector('.start-game').style.display = 'none'
+            document.querySelector('.game__play').style.display = 'block'
+            animate()
+            
+        }, 639);
+    }
+}
+start.addEventListener('click', resizeFn)
+// window.onresize = resizeFn;
+// resizeFn();
 
 class Player {
     constructor(x,y,radius, color) {
@@ -118,6 +157,7 @@ let enemies = []
 let particles = []
 
 function init() {
+    
 
      player = new Player(x, y, 10, 'white')
 
@@ -153,13 +193,14 @@ function spawnEnemies() {
             y:Math.sin(angle)
         }
         enemies.push(new Enemy(x, y, radius, color, velocity))
-    }, 1000)
+    }, 720)
 }
 
 let animationId
 let score = 0
 
 function animate() {
+
     animationId = requestAnimationFrame(animate)
     c.fillStyle = 'rgba(0, 0, 0, 0.1)';
     c.fillRect(0, 0 , canvas.width, canvas.height)
@@ -175,6 +216,7 @@ function animate() {
         
     })
     projectiles.forEach((projectile,index) => {
+        smallsound.play()
         projectile.update();
 
         // remove from edges
@@ -198,8 +240,14 @@ function animate() {
         if (dist - enemy.radius - player.radius < 1) 
         {
             cancelAnimationFrame(animationId)
+            endSound.play()
             modelEl.style.display = 'flex'
-            bigScoreEl.innerHTML = score
+            startGameBtn.style.display = 'none'
+            bigScoreEl.innerHTML = `${score} <br>`
+            setTimeout(() => {
+                gamePlay.style.display = 'none'
+                endScreen.style.display = 'block'
+            }, 1800);
             
         }
 
@@ -232,7 +280,9 @@ function animate() {
 
                if(enemy.radius - 10 > 5) {
                 score += 100
+                
                 scoreEl.innerHTML = score
+                document.querySelector('.game-score').innerHTML = `Points Earned ${score}`
 
              
 
@@ -242,7 +292,9 @@ function animate() {
                 },0)
                } else {
                 score += 250
+                bigsound.play()
                 scoreEl.innerHTML = score
+                document.querySelector('.game-score').innerHTML = `Points Earned ${score}`
 
              
                 setTimeout(() => {
@@ -277,6 +329,7 @@ addEventListener('click', (event) => {
 })
 
 startGameBtn.addEventListener('click', () => {
+    
     init()
     animate()
     spawnEnemies()

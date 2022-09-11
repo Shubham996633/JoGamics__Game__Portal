@@ -7,6 +7,22 @@
     <title>Jo__Fire__Blaster</title>
 
 
+                            <!-- Favicons -->
+
+    <link rel="shortcut icon" href="assets/img/icons8-comet-48.png" type="image/x-icon">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+                        <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+                <!--==================== UNICONS ====================-->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
                 <!-- TailWind CSS -->
 
     
@@ -20,23 +36,140 @@
 </head>
 <body>
 
-    <div class="fixed text-white text-sm ml-2 mt-2 select-none"><span>Score: </span> <span id = "scoreEl">0</span></div>
-    
-    <div class="fixed inset-0 flex items-center justify-center" id = 'modalEl'>
-        <div class="bg-white max-w-md w-full p-6 text-center">
-            <h1 class="text-4xl font-bold leading-none" id = "bigScoreEl">0</h1>
-            <p class="text-sm text-gray-700 mb-4">Points</p>
-            <div>
-                <button class="bg-blue-500 text-white w-full py-3 rounded-full text-sm" id = "startGameBtn">Start Game</button>
+
+    <main class="main">
+
+        <section class="home section start-game" id="home">
+          
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Welcome to,<br> Fire-Blaster <br> Game
+                    </h1>
+                    <p class="home__description" >
+                        Simple Fire-Blaster Game <br>
+
+                        <b>Controls</b> :<br>
+                        <div class="controls">
+                       Just Click on the Incoming Balls to shoot<br><br>
+                       
+                    </div>
+                           
+
+            
+            
+                    </p>
+
+                    <div class="home__search">
+                              
+                            <button class="button start-create">Lets begin</button>
+                            
+                    <button class="button read-docs">Read Docs</button>
+
+                           
+                         
+                    </div>
+
+                  
+                 
+                </div>
+                <div class="home__images">
+
+                    <div class="home__img">
+                        <img src="assets/img/image_2022-09-11_08-01-43.png" alt="">
+                    </div>
+                </div>
+            
+                
+            </div>
+            
+
+        </section>
+
+
+        <section class="home section end-game" id="home">
+              
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        <br> Fire-Blaster <br> Game
+                    </h1>
+                    <p class="home__description" >
+                        <h1 class="game__result">
+                            <span class="result">You Lose</span><br>
+
+                            <span class="game-score">Your Score : 0</span>
+                        </h1>
+
+                        
+                        
+                           
+
+            
+            
+                    </p>
+
+                    <div class="home__search">
+                              <br>
+                            <button class="button try-again" onClick="window.location.reload()">Try Again</button>
+                            
+                    <button class="button close" onClick="javascript:window.close('','_parent','');">Close</button>
+
+                           
+                         
+                    </div>
+
+                  
+                 
+                </div>
+
+                <div class="home__images">
+
+                    <div class="home__img">
+                        <img src="assets/img/image_2022-09-11_08-01-43.png" alt="">
+                    </div>
+                </div>
+            
+                
+            </div>
+            
+
+        </section>
+
+        </main>
+
+    <div class="game__play">
+        <div class="fixed text-white text-sm ml-2 mt-2 select-none"><span>Score: </span> <span id = "scoreEl">0</span></div>
+        
+        <div class="fixed inset-0 flex items-center justify-center" id = 'modalEl'>
+            <div class="bg-white max-w-md w-full p-6 text-center">
+                <h1 class="text-4xl font-bold leading-none" id = "bigScoreEl">0</h1>
+                <p class="text-sm text-gray-700 mb-4">Points</p>
+                <div>
+                    <button class="bg-blue-500 text-white w-full py-3 rounded-full text-sm" id = "startGameBtn">Start Game</button>
+                </div>
             </div>
         </div>
+        <canvas></canvas>
+
     </div>
-    <canvas></canvas>
+
+            <!-- Sounds -->
+
+    <audio src="assets/sounds/small.wav" class="sound-small"></audio>
+    <audio src="assets/sounds/big.mp3" class="sound-big"></audio>
+    <audio src="assets/sounds/fireblast.mp3" class="sound-end"></audio>
 
 
                 <!-- GSAP JS -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+                <!-- Sweet Alert -->
+
+    <script src="assets/js/sweetalert2.all.min.js"></script>
 
                 <!-- Main Js -->
 
