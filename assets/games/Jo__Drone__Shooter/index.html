@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jo__Drone__Shooter</title>
 
+
+                <!-- Favicons -->
+
+        <link rel="shortcut icon" href="Game__assets/assets/img/iconsgame.png" type="image/x-icon">
+
+                                <!-- Boxicons -->
+
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                            
+                                <!-- Remix Icons -->
+                            
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+                            
+               
+
             <!-- Google Fonts Bangers -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,42 +29,75 @@
 
             <!-- CSS-->
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="Game__assets/assets/css/styles.css">
 
 
 </head>
 <body>
 
+<main class="main">
 
-    <canvas id="canvas1"></canvas>
+    <section class="home section start-game" id="home">
+      
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Welcome to,<br> Space Drone Shooter <br> Game
+                </h1>
+                <p class="home__description" >
+                    Simple Space Drone Shooter Game <br>
+
+                    <b>Controls</b> :<br>
+                    <div class="controls">
+                            Press 'Left-Arrow' for Moving left<br>
+                            Press 'Right-Arrow' for Moving right<br>
+                            Press 'Spacebar' for Shoot<br>
+                   
+                </div>
+                       
+
+        
+        
+                </p>
+
+                <div class="home__search">
+                          
+                        <button class="button start-create">Lets begin</button>
+                        
+                <button class="button read-docs">Read Docs</button>
+
+                       
+                     
+                </div>
+
+              
+             
+            </div>
+            <div class="home__images">
+
+                <div class="home__img">
+                    <img src="Game__Assets/assets/img/game.png" alt="">
+                </div>
+            </div>
+        
+            
+        </div>
+        
+
+    </section>
 
 
-                <!-- Characters -->
-    <img src="assets/img/player.png" alt="" id="player">
-    <img src="assets/img/angler1.png" alt="" id="angler1">
-    <img src="assets/img/angler2.png" alt="" id="angler2">
-    <img src="assets/img/lucky.png" alt="" id="lucky">
     
 
-                <!-- Props-->
+    </main>
 
-    <img src="assets/img/projectile.png" alt="" id="projectile">
-    <img src="assets/img/gears.png" alt="" id="gears">
-    
+    <script src="Game__assets/assets/js/sweetalert2.all.min.js"></script>
 
-                <!-- Environment -->
+            <!-- Main JS -->
 
-    <img src="assets/img/layer1.png" alt="" id="layer1">
-    <img src="assets/img/layer2.png" alt="" id="layer2">
-    <img src="assets/img/layer3.png" alt="" id="layer3">
-    <img src="assets/img/layer4.png" alt="" id="layer4">
+    <script src="Game__assets/assets/js/main.js"></script>
 
 
-                <!-- Main Javascripts -->
-
-                <!-- Main JS -->
-
-    <script src="assets/js/main.js"></script>
-    
+    <script src="Game__Assets/javaScript/script.js"></script>
 </body>
 </html>
