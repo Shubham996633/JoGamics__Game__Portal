@@ -1,0 +1,16 @@
+body{
+    background: black;
+}
+
+#canvas1{
+    position: absolute;
+    top: -33%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 5px solid white;
+}
+
+#playerImage, #backgroundImage, #enemyImage{
+    display: none;
+}
+/* 5:03:50 */
