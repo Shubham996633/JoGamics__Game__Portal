@@ -85,21 +85,17 @@ window.addEventListener('load', function(){
             this.frameY = 0
         }
         draw(context){
-            context.lineWidth = 5
-            context.strokeStyle = 'white'
-            context.beginPath()
-            context.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0 , Math.PI * 2)
-            context.stroke()
+            
            
             context.drawImage(this.image, this.frameX * this.width, this.frameY * this.width, this.width, this.height, this.x, this.y, this.width, this.height)
         }
         update(input, deltaTime, enemies){
 
             enemies.forEach(enemy => {
-                const dx = (enemy.x + enemy.width/2) - (this.x + this.width/2)
-                const dy = (enemy.y + enemy.height/2) - (this.y + this.height/2)
+                const dx = (enemy.x + enemy.width/2 - 20) - (this.x + this.width/2)
+                const dy = (enemy.y + enemy.height/2) - (this.y + this.height/2 + 20)
                 const distance = Math.sqrt(dx * dx + dy * dy)
-                if(distance < enemy.width/2 + this.width/2){
+                if(distance < enemy.width/3 + this.width/3){
                     gameOver = true
                 }
 
@@ -116,7 +112,7 @@ window.addEventListener('load', function(){
             }else if(input.keys.indexOf('ArrowLeft') > -1){
                 this.speed = -5
 
-            }else if((input.keys.indexOf('ArrowUp') > -1) || input.keys.indexOf('swipe up') > -1 && this.onGround()){
+            }else if((input.keys.indexOf('ArrowUp') > -1 || input.keys.indexOf('swipe up') > -1) && this.onGround()){
                 this.vy -= 21
 
             }
@@ -195,11 +191,7 @@ window.addEventListener('load', function(){
         }
 
         draw(context){
-            context.lineWidth = 5
-            context.strokeStyle = 'white'
-            context.beginPath()
-            context.arc(this.x + this.width/2, this.y + this.height/2, this.width/2, 0 , Math.PI * 2)
-            context.stroke()
+           
             
             context.drawImage(this.image, this.frameX * this.width, 0, this.width, this.height, this.x , this.y, this.width, this.height)
         }
