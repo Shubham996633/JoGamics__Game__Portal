@@ -476,7 +476,7 @@ function animate(){
     
     c.clearRect(0,0, canvas.width, canvas.height)
 
-    if(keys.w.pressed && lastkey === 'w'){
+    if(keys.w.pressed && lastkey === 'ArrowUp'){
         for(let i = 0; i < boundaries.length; i++){
             const boundary = boundaries[i]
 
@@ -495,7 +495,7 @@ function animate(){
             }
     }
         
-    }else if(keys.a.pressed && lastkey === 'a'){
+    }else if(keys.a.pressed && lastkey === 'ArrowLeft'){
         for(let i = 0; i < boundaries.length; i++){
             const boundary = boundaries[i]
 
@@ -514,7 +514,7 @@ function animate(){
             }
     }
 
-    }else if(keys.s.pressed && lastkey === 's'){
+    }else if(keys.s.pressed && lastkey === 'ArrowDown'){
         for(let i = 0; i < boundaries.length; i++){
             const boundary = boundaries[i]
 
@@ -533,7 +533,7 @@ function animate(){
             }
     }
 
-    }else if(keys.d.pressed && lastkey === 'd'){
+    }else if(keys.d.pressed && lastkey === 'ArrowRight'){
         for(let i = 0; i < boundaries.length; i++){
             const boundary = boundaries[i]
 
@@ -767,28 +767,28 @@ function animate(){
 
 addEventListener('keydown', ({key}) => {
     switch (key){
-        case 'w':
+        case 'ArrowUp':
             keys.w.pressed = true
-            lastkey = 'w'
+            lastkey = 'ArrowUp'
             
             
             break
 
-        case 'a':
+        case 'ArrowLeft':
             keys.a.pressed = true
-            lastkey = 'a'
+            lastkey = 'ArrowLeft'
 
             break
 
-        case 's':
+        case 'ArrowDown':
             keys.s.pressed = true
-            lastkey = 's'
+            lastkey = 'ArrowDown'
             
             break
 
-        case 'd':
+        case 'ArrowRight':
             keys.d.pressed = true
-            lastkey = 'd'
+            lastkey = 'ArrowRight'
 
             break
     }
@@ -796,22 +796,22 @@ addEventListener('keydown', ({key}) => {
 
 addEventListener('keyup', ({key}) => {
     switch (key){
-        case 'w':
+        case 'ArrowUp':
             keys.w.pressed = false
 
             break
 
-        case 'a':
+        case 'ArrowLeft':
             keys.a.pressed = false
 
             break
 
-        case 's':
+        case 'ArrowDown':
             keys.s.pressed = false
 
             break
 
-        case 'd':
+        case 'ArrowDown':
             keys.d.pressed = false
             
             break

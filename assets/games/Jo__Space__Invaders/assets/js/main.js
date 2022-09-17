@@ -514,13 +514,13 @@ function animate() {
 addEventListener('keydown', ({key}) => {
     if(game.over) return
     switch (key) {
-        case 'a' :
+        case 'ArrowLeft' :
             // console.log('left')
 
             keys.a.pressed = true
             break
 
-        case 'd' :
+        case 'ArrowRight' :
             // console.log('right')
             keys.d.pressed = true
 
@@ -550,13 +550,13 @@ addEventListener('keydown', ({key}) => {
 
 addEventListener('keyup', ({key}) => {
     switch (key) {
-        case 'a' :
+        case 'ArrowLeft' :
             // console.log('left')
 
             keys.a.pressed = false
             break
 
-        case 'd' :
+        case 'ArrowRight' :
             // console.log('right')
             keys.d.pressed = false
 
