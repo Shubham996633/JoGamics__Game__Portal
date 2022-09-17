@@ -4,6 +4,19 @@ import {Background} from './background.js'
 import { FlyingEnemy, ClimbingEnemy, GroundEnemy } from './enemies.js'
 import { UI } from './UI.js'
 
+
+const gamePlay = document.querySelector('.game__play')
+const endScreen = document.querySelector('.end-game')
+const tryAgain = document.querySelector('.try-again')
+
+const result = document.querySelector('.result')
+const endImage = document.querySelector('.end-image')
+
+tryAgain.addEventListener('click', revertGame)
+function revertGame(){
+    location.replace("./././index.html")
+}
+
 window.addEventListener('load', function(){
     const canvas = document.getElementById('canvas1')
     const ctx = canvas.getContext('2d')

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Doggy Game</title>
+    <title>Jo Enemy Eater Game</title>
 
                     <!-- Creepstar -->
 
@@ -12,26 +12,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+                    <!-- Favicons -->
+
+    <link rel="shortcut icon" href="assets/img/lives.png" type="image/x-icon">
                     <!-- CSS -->
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <canvas id = "canvas1"></canvas>
-    <img src="assets/img/playe Final endless runner game with all the features.png" alt="" id="player">
-    <img src="assets/img/layer-5 Forest background layers.png" alt="" id="layer5">
-    <img src="assets/img/layer-4 Forest background layers.png" alt="" id="layer4">
-    <img src="assets/img/layer-3 Forest background layers.png" alt="" id="layer3">
-    <img src="assets/img/layer-2 Forest background layers.png" alt="" id="layer2">
-    <img src="assets/img/layer-1 Forest background layers.png" alt="" id="layer1">
-    <img src="assets/img/enemy_fly.png" alt="" id="enemy_fly">
-    <img src="assets/img/enemy_plant.png" alt="" id="enemy_plant">
-    <img src="assets/img/enemy_spider_big.png" alt="" id="enemy_spider_big">
-    <img src="assets/img/fire.png" alt="" id="fire">
-    <img src="assets/img/boom Collision animation.png" alt="" id="collisionAnimation">
-    <img src="assets/img/lives.png" alt="" id="lives">
+
+    <main class="main">
+
+    
 
 
+        <section class="home section end-game" id="home">
+              
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+    
+                       Enemy Eater  <br> Game
+                    </h1>
+                    <p class="home__description" >
+                        <h1 class="game__result">
+                            <span class="result">You Lose</span><br>
+    
+                            <span class="game-score">Your Score : 0</span>
+                        </h1>
+    
+                        
+                        
+                           
+    
+            
+            
+                    </p>
+    
+                    <div class="home__search">
+                              <br>
+                            <button class="button try-again back">Try Again</button>
+                            
+                    
+    
+                           
+                         
+                    </div>
+    
+                  
+                 
+                </div>
+    
+                <div class="home__images images-end">
+    
+                    <div class="home__img">
+                        <img src="" alt="" class="end-image">
+                    </div>
+                </div>
+            
+                
+            </div>
+            
+    
+        </section>
+    
+        </main>
+    
+       <div class="game__play">
+
+
+
+        <canvas id = "canvas1"></canvas>
+        <img src="assets/img/playe Final endless runner game with all the features.png" alt="" id="player">
+        <img src="assets/img/layer-5 Forest background layers.png" alt="" id="layer5">
+        <img src="assets/img/layer-4 Forest background layers.png" alt="" id="layer4">
+        <img src="assets/img/layer-3 Forest background layers.png" alt="" id="layer3">
+        <img src="assets/img/layer-2 Forest background layers.png" alt="" id="layer2">
+        <img src="assets/img/layer-1 Forest background layers.png" alt="" id="layer1">
+        <img src="assets/img/enemy_fly.png" alt="" id="enemy_fly">
+        <img src="assets/img/enemy_plant.png" alt="" id="enemy_plant">
+        <img src="assets/img/enemy_spider_big.png" alt="" id="enemy_spider_big">
+        <img src="assets/img/fire.png" alt="" id="fire">
+        <img src="assets/img/boom Collision animation.png" alt="" id="collisionAnimation">
+        <img src="assets/img/lives.png" alt="" id="lives">
+
+    </div>
 
                     <!-- JavaScript -->
     <script src="assets/js/main.js" type="module"></script>

@@ -1,3 +1,15 @@
+const gamePlay = document.querySelector('.game__play')
+const endScreen = document.querySelector('.end-game')
+const tryAgain = document.querySelector('.try-again')
+
+const result = document.querySelector('.result')
+const endImage = document.querySelector('.end-image')
+
+tryAgain.addEventListener('click', revertGame)
+function revertGame(){
+    location.replace("./././index.html")
+}
+
 class Layer {
     constructor(game, width, height, speedModifier, image){
         this.game = game

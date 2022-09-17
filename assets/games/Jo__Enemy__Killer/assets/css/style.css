@@ -2,13 +2,10 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-
-
                 /* Variable CSS */
 
 :root{
     --header-height: 3.5rem;
-
 
             /* Colors */
 
@@ -21,8 +18,7 @@
     --body-color: #fff;
     --container-color: #fff;
 
-
-            /* Fonts */
+    /* Fonts */
 
     --body-font: 'Poppins', 'sans-serif';
     --biggest-font-size: 2.25rem;
@@ -33,8 +29,6 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-
-
             /* Font Weight */
     /* For Knowledge 1rem = 16px */
 
@@ -44,7 +38,6 @@
 
             /* Z-Index */
     --z-fixed: 100;
-
 
 }
 
@@ -151,10 +144,6 @@ button{
     z-index:var(--z-fixed);
     transition: 0.4s;
 }
-
-
-
-
 
 .home{
     background: linear-gradient(170deg,
@@ -290,7 +279,6 @@ button{
     margin-left: 3rem;
     
 }
-
 
 .score{
     position: fixed;
