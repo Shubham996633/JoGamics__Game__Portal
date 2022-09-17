@@ -4,7 +4,9 @@
     box-sizing: border-box;
 
 }
-
+body{
+    background: black;
+}
 #canvas1{
     border: 5px solid black;
     position: absolute;
