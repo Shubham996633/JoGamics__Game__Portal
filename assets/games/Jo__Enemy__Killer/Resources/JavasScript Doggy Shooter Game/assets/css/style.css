@@ -13,8 +13,9 @@
     transform: translate(-50%, -50%);
     max-width: 100%;
     max-height: 100%;
+    font-family: 'Creepster', cursive;
 }
 
-#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_plant, #enemy_fly, #enemy_spider_big{
+#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_plant, #enemy_fly, #enemy_spider_big, #fire, #collisionAnimation, #lives{
     display: none;
 }
