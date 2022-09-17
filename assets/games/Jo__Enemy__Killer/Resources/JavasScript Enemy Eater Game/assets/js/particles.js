@@ -4,6 +4,7 @@ const tryAgain = document.querySelector('.try-again')
 
 const result = document.querySelector('.result')
 const endImage = document.querySelector('.end-image')
+const powermode = document.querySelector('.powermode')
 
 tryAgain.addEventListener('click', revertGame)
 function revertGame(){
@@ -84,6 +85,7 @@ export class Fire extends Particles{
         super.update()
         this.angle += this.va
         this.x += Math.sin(this.angle * 10)
+        powermode.play()
     }
 
     draw(context){

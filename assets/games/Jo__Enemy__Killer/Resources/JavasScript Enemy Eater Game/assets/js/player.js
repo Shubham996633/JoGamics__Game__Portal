@@ -5,6 +5,9 @@ const tryAgain = document.querySelector('.try-again')
 const result = document.querySelector('.result')
 const endImage = document.querySelector('.end-image')
 
+const scoregain = document.querySelector('.scoregain')
+const scoreloss = document.querySelector('.scoreloss')
+
 tryAgain.addEventListener('click', revertGame)
 function revertGame(){
     location.replace("./././index.html")
@@ -83,10 +86,13 @@ export class Player {
                 this.game.collisions.push(new CollisionAnimation(this.game, enemy.x + enemy.width * 0.5, enemy.y + enemy.height * 0.5))
                 if(this.currentState === this.states[4] || this.currentState === this.states[5]){
                     this.game.score++
+                    scoregain.play()
+
                     this.game.floatingMessages.push(new FloatingMessages('+1', enemy.x, enemy.y, 150, 50))
                 }else{
                     this.setState(6, 0)
                     this.game.score-=5
+                    scoreloss.play()
 
                     this.game.lives--
                     if(this.game.lives <= 0) this.game.gameOver = true

@@ -5,6 +5,8 @@ const tryAgain = document.querySelector('.try-again')
 const result = document.querySelector('.result')
 const endImage = document.querySelector('.end-image')
 
+const powerattack = document.querySelector('.powerattack')
+
 tryAgain.addEventListener('click', revertGame)
 function revertGame(){
     location.replace("./././index.html")
@@ -105,6 +107,7 @@ export class Jumping extends State{
             this.game.player.setState(states.ROLLING, 2)
         }else if(input.includes('ArrowDown')){
             this.game.player.setState(states.DIVING, 0)
+            powerattack.play()
 
         }
 
@@ -132,6 +135,7 @@ export class Falling extends State{
             this.game.player.setState(states.RUNNING, 1)
         }else if(input.includes('ArrowDown')){
             this.game.player.setState(states.DIVING, 0)
+            powerattack.play()
 
         }
 
@@ -165,6 +169,7 @@ export class Rolling extends State{
             this.game.player.vy -= 27
         }else if(input.includes('ArrowDown')  && !this.game.player.onGround()){
             this.game.player.setState(states.DIVING, 0)
+            powerattack.play()
 
         }
     }

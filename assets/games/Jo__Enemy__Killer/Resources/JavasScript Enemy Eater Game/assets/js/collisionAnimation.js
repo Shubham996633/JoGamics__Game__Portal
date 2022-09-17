@@ -4,6 +4,8 @@ const tryAgain = document.querySelector('.try-again')
 
 const result = document.querySelector('.result')
 const endImage = document.querySelector('.end-image')
+const scoregain = document.querySelector('.scoregain')
+
 
 tryAgain.addEventListener('click', revertGame)
 function revertGame(){
@@ -42,5 +44,6 @@ export class CollisionAnimation {
             this.frameTimer += deltaTime
         }
         if(this.frameX > this.maxFrame) this.markedForDeletion = true
+        scoregain.play()
     }
 }

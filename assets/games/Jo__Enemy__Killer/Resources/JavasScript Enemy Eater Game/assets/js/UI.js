@@ -4,6 +4,7 @@ const tryAgain = document.querySelector('.try-again')
 
 const result = document.querySelector('.result')
 const endImage = document.querySelector('.end-image')
+const end = document.querySelector('.endgame')
 
 tryAgain.addEventListener('click', revertGame)
 function revertGame(){
@@ -61,17 +62,19 @@ export class UI{
                 result.innerHTML = 'Blazes Try to score<br>More than 99!'
                 endImage.setAttribute('src', './assets/img/lose.png')
             }
+            end.play()
 
-            // setTimeout(() => {
-            //     shootfire.stop()
-            //     blastfire.stop()
-            //     hive.stop()
-            //     shootTouch.stop()
-            //     levelup.stop()
-            //     end.stop()
+            setTimeout(() => {
+                // shootfire.stop()
+                // blastfire.stop()
+                // hive.stop()
+                // shootTouch.stop()
+                // levelup.stop()
+                end.stop()
 
                 
-            // }, 9000);
+            }, 6000);
+            
 
             setTimeout(() => {
               

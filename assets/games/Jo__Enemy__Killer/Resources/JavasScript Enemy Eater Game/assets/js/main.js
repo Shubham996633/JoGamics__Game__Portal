@@ -4,6 +4,7 @@ import {Background} from './background.js'
 import { FlyingEnemy, ClimbingEnemy, GroundEnemy } from './enemies.js'
 import { UI } from './UI.js'
 
+const powermode = document.querySelector('.powermode')
 
 const gamePlay = document.querySelector('.game__play')
 const endScreen = document.querySelector('.end-game')

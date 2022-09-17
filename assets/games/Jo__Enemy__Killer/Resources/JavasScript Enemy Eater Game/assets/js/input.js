@@ -4,6 +4,7 @@ const tryAgain = document.querySelector('.try-again')
 
 const result = document.querySelector('.result')
 const endImage = document.querySelector('.end-image')
+const powermode = document.querySelector('.powermode')
 
 tryAgain.addEventListener('click', revertGame)
 function revertGame(){
@@ -25,6 +26,8 @@ export class InputHandler {
             }else if (e.key === 'd') this.game.debug = !this.game.debug
 
         })
+
+    
 
         window.addEventListener('keyup', e => {
             if(     e.key === 'ArrowDown' || 
