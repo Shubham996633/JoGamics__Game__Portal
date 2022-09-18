@@ -6,7 +6,6 @@
 
 
 
-## To Visit Click Here : <a href = "../../Resources/JavasScript Enemy Eater Game/index.html">Enemy Forest Eater</a>
 
 ## --> Controls
 

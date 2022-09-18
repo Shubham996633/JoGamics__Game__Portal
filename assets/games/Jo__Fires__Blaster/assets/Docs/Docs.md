@@ -5,7 +5,6 @@
 ![image](https://user-images.githubusercontent.com/65014926/190912452-573fa14f-ba80-4bff-af6b-c50f21d4b7d2.png)
 
 
-## To Visit Click Here : <a href = "../../index.html">Fire Blaster Game</a>
 
 ## --> Controls
 

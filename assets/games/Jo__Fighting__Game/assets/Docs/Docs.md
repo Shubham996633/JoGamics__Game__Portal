@@ -7,7 +7,6 @@
 
 
 
-## To Visit Click Here : <a href = "../../index.html">Samurai Fighting Game</a>
 
 ## --> Controls
 

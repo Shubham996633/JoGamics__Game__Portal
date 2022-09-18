@@ -6,7 +6,6 @@
 
 
 
-## To Visit Click Here : <a href = "../../index.html">Space Invaders Game</a>
 
 ## --> Controls
 
