@@ -132,7 +132,7 @@ allReleased.innerHTML = `
                                 <div class="featured-game-card">
 
                                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    <img src="assets/img/dronebig.png" width="450" height="600" loading="lazy"
                                     alt="Just for Gamers" class="img-cover">
                                 </figure>
 
@@ -179,7 +179,7 @@ allReleased.innerHTML = `
                                 <div class="featured-game-card">
 
                                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    <img src="assets/img/enemy.png" width="450" height="600" loading="lazy"
                                     alt="Just for Gamers" class="img-cover">
                                 </figure>
 
@@ -227,7 +227,7 @@ allReleased.innerHTML = `
                                 <div class="featured-game-card">
 
                                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    <img src="assets/img/samurai.png" width="450" height="600" loading="lazy"
                                     alt="Just for Gamers" class="img-cover">
                                 </figure>
 
@@ -275,7 +275,7 @@ allReleased.innerHTML = `
                                 <div class="featured-game-card">
 
                                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    <img src="assets/img/fire.png" width="450" height="600" loading="lazy"
                                     alt="Just for Gamers" class="img-cover">
                                 </figure>
 
@@ -322,7 +322,7 @@ allReleased.innerHTML = `
                                 <div class="featured-game-card">
 
                                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    <img src="assets/img/spaceship.png" width="450" height="600" loading="lazy"
                                     alt="Just for Gamers" class="img-cover">
                                 </figure>
 
@@ -369,7 +369,7 @@ allReleased.innerHTML = `
                                 <div class="featured-game-card">
 
                                 <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
-                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    <img src="assets/img/pacman.png" width="450" height="600" loading="lazy"
                                     alt="Just for Gamers" class="img-cover">
                                 </figure>
 

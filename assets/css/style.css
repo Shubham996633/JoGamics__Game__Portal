@@ -517,8 +517,74 @@ body {
 .featured-game-card:is(:hover, :focus-within) .card-content-overlay { opacity: 1; }
 
 
-
 .footer { color: var(--roman-silver); }
+
+.footer-top { padding-block-end: var(--section-padding); }
+
+.footer-top .container {
+  display: grid;
+  gap: 50px;
+}
+
+.footer .logo { margin-block-end: 35px; }
+
+.footer-text,
+.footer .contact-item {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  line-height: 1.8;
+}
+
+.footer-text { margin-block-end: 15px; }
+
+.contact-item:not(:last-child) { margin-block-end: 10px; }
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contact-icon {
+  margin-block-start: 3px;
+  font-size: 17px;
+}
+
+.footer-list-title {
+  position: relative;
+  color: var(--silver);
+  font-family: var(--ff-oxanium);
+  text-transform: uppercase;
+  font-weight: var(--fw-800);
+  padding-block-end: 20px;
+  margin-block-end: 35px;
+}
+
+.footer-list-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: var(--marigold);
+}
+
+.footer-link {
+  font-size: var(--fs-9);
+  max-width: max-content;
+  transition: var(--transition);
+  padding-block: 8px;
+  font-weight: var(--fw-500);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--marigold);
+  transform: translateX(5px);
+}
+
+
+.footer-bottom-img { display: none; }
 
 .footer-bottom {
   background-color: var(--eerie-black-2);
@@ -536,6 +602,8 @@ body {
   display: inline-block;
   color: var(--marigold);
 }
+
+
 
 
 
@@ -558,6 +626,9 @@ body {
 }
 
 
+
+
+
 @media (min-width: 576px) {
 
   .container {
@@ -577,6 +648,7 @@ body {
 
   }
 
+  .footer-top .container { grid-template-columns: 1fr 1fr; }
 
   .footer-brand,
   .footer-wrapper { grid-column: 1 / 3; 
@@ -594,6 +666,9 @@ body {
     margin-inline: auto;
   }
 
+
+  .footer-brand,
+  .footer-wrapper { grid-column: auto; }
 
   .footer-bottom-img { display: block; }
 
