@@ -40,8 +40,10 @@ window.addEventListener("scroll", function () {
 });
 
 
+
+
 function fullScreen(theURL) {
-    window.open(theURL, '', 'fullscreen=yes, scrollbars=yes,location=no,resizable=yes');
+    window.open(theURL, '', "width=1920, height=1080");
     }
 
 const mustTry = document.querySelector('.must__try')
