@@ -282,7 +282,7 @@ allReleased.innerHTML = `
                                 <div class="card-content">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Fire__Blaster/index.html" target = "_blank" class="card-title" tabindex="-1">
+                                    <a href= "./assets/games/Jo__Fires__Blaster/index.html" target = "_blank" class="card-title" tabindex="-1">
                                          <span class="span">Fire Blaster  </span>
                                     </a>
                                     </h3>
@@ -301,7 +301,7 @@ allReleased.innerHTML = `
                                     class="card-icon">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Fire__Blaster/index.html" target = "_blank" class="card-title">
+                                    <a href= "./assets/games/Jo__Fires__Blaster/index.html" target = "_blank" class="card-title">
                                         Click Here to <span class="span">Play</span>
                                     </a>
                                     </h3>
