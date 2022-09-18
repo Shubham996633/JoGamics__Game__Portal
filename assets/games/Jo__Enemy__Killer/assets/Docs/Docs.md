@@ -5,8 +5,6 @@
 ![image](https://user-images.githubusercontent.com/65014926/190911141-868f2a95-8ba4-4993-b576-39b7c0043a2d.png)
 
 
-
-
 ## --> Controls
 
 ### &emsp;&emsp;Press 'Left-Arrow' for Moving left<br>&emsp;&emsp;Press 'Right-Arrow' for Moving right<br>&emsp;&emsp;Press 'Spacebar' to Enter in Attack Mode<br>&emsp;&emsp;Press 'DownArrow' to Sit ( temporarily  pause ) <br>
