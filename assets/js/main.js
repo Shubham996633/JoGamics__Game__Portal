@@ -39,3 +39,377 @@ window.addEventListener("scroll", function () {
   }
 });
 
+const mustTry = document.querySelector('.must__try')
+
+mustTry.innerHTML = `
+
+                        <li class="scrollbar-item">
+                        <div class="latest-game-card">
+
+                        <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                            <img src="assets/img/latest-game-1.jpg" width="400" height="470" loading="lazy"
+                            alt="Drone Galaxy Shooter" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            
+
+                            <h3 class="h3">
+                            <a href="#" class="card-title">Drone Galaxy Shooter <span class="span">Action</span></a>
+                            </h3>
+
+                            <p class="card-price">
+                            Build Language : <span class="span">JavaScript</span>
+                            </p>
+
+                        </div>
+
+                        </div>
+                        </li>
+
+
+
+                        <li class="scrollbar-item">
+                        <div class="latest-game-card">
+
+                        <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                            <img src="assets/img/latest-game-1.jpg" width="400" height="470" loading="lazy"
+                            alt="Enemy Forest Hunter" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            
+
+                            <h3 class="h3">
+                            <a href="#" class="card-title">Enemy Forest Eater <span class="span">Action</span></a>
+                            </h3>
+
+                            <p class="card-price">
+                            Build Language : <span class="span">JavaScript</span>
+                            </p>
+
+                        </div>
+
+                        </div>
+                        </li>
+
+
+
+                        <li class="scrollbar-item">
+                        <div class="latest-game-card">
+
+                        <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                            <img src="assets/img/latest-game-1.jpg" width="400" height="470" loading="lazy"
+                            alt="Samurai Fighting" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            
+
+                            <h3 class="h3">
+                            <a href="#" class="card-title">Samurai Fighting <span class="span">Action</span></a>
+                            </h3>
+
+                            <p class="card-price">
+                            Build Language : <span class="span">JavaScript</span>
+                            </p>
+
+                        </div>
+
+                        </div>
+                        </li>
+
+                    `
+
+
+const allReleased = document.querySelector('.all__released')
+
+allReleased.innerHTML = `
+                                <li class="scrollbar-item">
+                                <div class="featured-game-card">
+
+                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    alt="Just for Gamers" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">Must Try
+                                    <a href="#" class="card-title" tabindex="-1">
+                                         <span class="span">DRONE GALAXY SHOOTER  </span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    <i class='bx bxl-javascript'></i>
+
+                                    <span class="span">Based on JavaScript</span>
+                                    </span>
+
+                                </div>
+
+                                <div class="card-content-overlay">
+
+                                    <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                                    class="card-icon">
+
+                                    <h3 class="h3">
+                                    <a  href= "./assets/games/Jo__Drone__Shooter/index.html" target = "_blank" class="card-title">
+                                        Click Here to <span class="span">Play</span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    
+
+                                   
+                                    </span>
+
+                                </div>
+
+                                </div>
+                                </li>
+
+
+                                <li class="scrollbar-item">
+                                <div class="featured-game-card">
+
+                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    alt="Just for Gamers" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">Must Try
+                                    <a href="#" class="card-title" tabindex="-1">
+                                         <span class="span">Enemy Forest Eater  </span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    <i class='bx bxl-javascript'></i>
+
+                                    <span class="span">Based on JavaScript</span>
+                                    </span>
+
+                                </div>
+
+                                <div class="card-content-overlay">
+
+                                    <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                                    class="card-icon">
+
+                                    <h3 class="h3">
+                                    <a href= "./assets/games/Jo__Enemy__Killer/index.html" target = "_blank" class="card-title">
+                                        Click Here to <span class="span">Play</span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    
+
+                                   
+                                    </span>
+
+                                </div>
+
+                                </div>
+                                </li>
+
+                            
+
+                                <li class="scrollbar-item">
+                                <div class="featured-game-card">
+
+                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    alt="Just for Gamers" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                    <a href="#" class="card-title" tabindex="-1">
+                                         <span class="span">SAMURAI FIGHTING  </span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    <i class='bx bxl-javascript'></i>
+
+                                    <span class="span">Based on JavaScript</span>
+                                    </span>
+
+                                </div>
+
+                                <div class="card-content-overlay">
+
+                                    <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                                    class="card-icon">
+
+                                    <h3 class="h3">
+                                    <a href= "./assets/games/Jo__Fighting__Game/index.html" target = "_blank" class="card-title">
+                                        Click Here to <span class="span">Play</span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    
+
+                                   
+                                    </span>
+
+                                </div>
+
+                                </div>
+                                </li>
+
+
+
+                                <li class="scrollbar-item">
+                                <div class="featured-game-card">
+
+                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    alt="Just for Gamers" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                    <a href="#" class="card-title" tabindex="-1">
+                                         <span class="span">Fire Blaster  </span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    <i class='bx bxl-javascript'></i>
+
+                                    <span class="span">Based on JavaScript</span>
+                                    </span>
+
+                                </div>
+
+                                <div class="card-content-overlay">
+
+                                    <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                                    class="card-icon">
+
+                                    <h3 class="h3">
+                                    <a href= "./assets/games/Jo__FIre__Blaster/index.html" target = "_blank" class="card-title">
+                                        Click Here to <span class="span">Play</span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    
+
+                                   
+                                    </span>
+
+                                </div>
+
+                                </div>
+                                </li>
+
+
+                                <li class="scrollbar-item">
+                                <div class="featured-game-card">
+
+                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    alt="Just for Gamers" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                    <a href="#" class="card-title" tabindex="-1">
+                                         <span class="span">Space Invaders  </span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    <i class='bx bxl-javascript'></i>
+
+                                    <span class="span">Based on JavaScript</span>
+                                    </span>
+
+                                </div>
+
+                                <div class="card-content-overlay">
+
+                                    <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                                    class="card-icon">
+
+                                    <h3 class="h3">
+                                    <a href= "./assets/games/Jo__Space__Invaders/index.html" target = "_blank" class="card-title">
+                                        Click Here to <span class="span">Play</span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    
+
+                                   
+                                    </span>
+
+                                </div>
+
+                                </div>
+                                </li>
+
+
+                                <li class="scrollbar-item">
+                                <div class="featured-game-card">
+
+                                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                                    <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                                    alt="Just for Gamers" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3">
+                                    <a href="#" class="card-title" tabindex="-1">
+                                         <span class="span">Pacman  </span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    <i class='bx bxl-javascript'></i>
+
+                                    <span class="span">Based on JavaScript</span>
+                                    </span>
+
+                                </div>
+
+                                <div class="card-content-overlay">
+
+                                    <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                                    class="card-icon">
+
+                                    <h3 class="h3">
+                                    <a href= "./assets/games/Jo__Pacman__Game/index.html" target = "_blank" class="card-title">
+                                        Click Here to <span class="span">Play</span>
+                                    </a>
+                                    </h3>
+
+                                    <span class="card-meta">
+                                    
+
+                                   
+                                    </span>
+
+                                </div>
+
+                                </div>
+                                </li>
+
+
+                        `
