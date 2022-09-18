@@ -200,6 +200,7 @@ body {
   overflow-x: auto;
   padding-block-end: 30px;
   scroll-snap-type: inline mandatory;
+  margin-top: 1rem;
 }
 
 .has-scrollbar::-webkit-scrollbar { height: 10px; }
@@ -219,7 +220,7 @@ body {
 
 .section-subtitle {
   color: var(--silver);
-  font-size: var(--fs-9);
+  font-size: var(--fs-4);
   font-weight: var(--fw-700);
   margin-block-end: 10px;
 }
@@ -230,6 +231,11 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.bxl-javascript{
+    font-size: var(--fs-5);
+    color: var(--marigold);
 }
 
 .scrollbar-item {
@@ -737,7 +743,10 @@ body {
 
   .h1 { --fs-2: 7.5rem; }
 
-  .scrollbar-item { min-width: calc(25% - 22.5px); }
+  .scrollbar-item { 
+        min-width: calc(25% - 22.5px); 
+        margin-bottom: 3rem;
+    }
 
   .header-bottom::before { width: 270px; }
 
