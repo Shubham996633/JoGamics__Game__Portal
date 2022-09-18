@@ -1,12 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jo Game Portal</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoGamics - InSearch of Incredible</title>
+
+
+                    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+                    <!-- Favicons -->
+
+
+  <link rel="shortcut icon" href="" type="image/svg+xml">
+
+                        <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
 </head>
-<body>
-    
+
+<body id="top">
+  <header class="header">
+
+    <div class="header-bottom skewBg" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">JoGamics</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#live" class="navbar-link skewBg" data-nav-link>Games</a>
+            </li>
+
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+
+   
+
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <article>
+
+      <section class="section hero" id="home" aria-label="home"
+        style="background-image: url('./assets/img/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">InSearch of Incredible</p>
+
+            <h1 class="h1 hero-title">
+              Republic of <span class="span">Games</span> 
+            </h1>
+
+            <p class="hero-text">
+              The Games Are only Build of <b><em>Vanilla JavaScript</em></b> Which Has a better User Experience
+            </p>
+
+            <button class="btn skewBg">Let's Start</button>
+
+          </div>
+
+          <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+            <img src="assets/img/hero-banner.png" width="700" height="700" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+      <div class="section-wrapper">
+
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+
+            <p class="section-subtitle">Must Try These</p>
+
+            <h2 class="h2 section-title">
+              InSearch of <span class="span">Incredible</span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="assets/img/latest-game-1.jpg" width="400" height="470" loading="lazy"
+                      alt="White Walker Daily" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">Zombie</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">White Walker <span class="span">Daily</span></a>
+                    </h3>
+
+                    <p class="card-price">
+                      Entry Fee : <span class="span">Free</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="assets/img/latest-game-2.jpg" width="400" height="470" loading="lazy"
+                      alt="Hunter Killer II" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">Adventure</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Hunter Killer <span class="span">II</span></a>
+                    </h3>
+
+                    <p class="card-price">
+                      Entry Fee : <span class="span">$25.00</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="assets/img/latest-game-3.jpg" width="400" height="470" loading="lazy"
+                      alt="Cyberpunk Daily" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">Action</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Cyberpunk <span class="span">Daily</span></a>
+                    </h3>
+
+                    <p class="card-price">
+                      Entry Fee : <span class="span">$25.00</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+      </div>
+
+
+
+
+
+      <!-- 
+        - #FEATURED GAME
+      -->
+
+      <section class="section featured-game" id="features" aria-label="featured game">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            All Released <span class="span">Games</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="assets/img/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="assets/img/featured-game-2.jpg" width="450" height="600" loading="lazy"
+                    alt="Need for Speed" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Need for <span class="span">Speed</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Need for <span class="span">Speed</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="assets/img/featured-game-3.jpg" width="450" height="600" loading="lazy"
+                    alt="Egypt Hunting Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Egypt Hunting <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Egypt Hunting <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="assets/img/featured-game-4.jpg" width="450" height="600" loading="lazy"
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="assets/img/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; JoGamics. All Right Reserved by <em>Shubham Maurya</em>
+        </p>
+
+
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
