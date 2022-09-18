@@ -39,6 +39,11 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+function fullScreen(theURL) {
+    window.open(theURL, '', 'fullscreen=yes, scrollbars=yes,location=no,resizable=yes');
+    }
+
 const mustTry = document.querySelector('.must__try')
 
 mustTry.innerHTML = `
@@ -53,10 +58,11 @@ mustTry.innerHTML = `
 
                         <div class="card-content">
 
-                            
+                       
 
                             <h3 class="h3">
-                            <a href= "./assets/games/Jo__Drone__Shooter/index.html" target = "_blank" class="card-title">Drone Galaxy Shooter <span class="span">Action</span></a>
+                            <a onclick=
+                            'fullScreen("./assets/games/Jo__Drone__Shooter/index.html");' class="card-title">Drone Galaxy Shooter <span class="span">Action</span></a>
                             </h3>
 
                             <p class="card-price">
@@ -83,7 +89,8 @@ mustTry.innerHTML = `
                             
 
                             <h3 class="h3">
-                            <a href= "./assets/games/Jo__Enemy__Killer/index.html" target = "_blank" class="card-title">Enemy Forest Eater <span class="span">Action</span></a>
+                            <a onclick=
+                            'fullScreen("./assets/games/Jo__Enemy__Killer/index.html")' class="card-title">Enemy Forest Eater <span class="span">Action</span></a>
                             </h3>
 
                             <p class="card-price">
@@ -110,7 +117,8 @@ mustTry.innerHTML = `
                             
 
                             <h3 class="h3">
-                            <a href= "./assets/games/Jo__Fighting__Game/index.html" target = "_blank" class="card-title">Samurai Fighting <span class="span">Action</span></a>
+                            <a onclick=
+                            'fullScreen("./assets/games/Jo__Fighting__Game/index.html")' class="card-title">Samurai Fighting <span class="span">Action</span></a>
                             </h3>
 
                             <p class="card-price">
@@ -139,7 +147,8 @@ allReleased.innerHTML = `
                                 <div class="card-content">
 
                                     <h3 class="h3">Must Try
-                                    <a href= "./assets/games/Jo__Drone__Shooter/index.html" target = "_blank" class="card-title" tabindex="-1">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Drone__Shooter/index.html")' class="card-title" tabindex="-1">
                                          <span class="span">DRONE GALAXY SHOOTER  </span>
                                     </a>
                                     </h3>
@@ -158,7 +167,8 @@ allReleased.innerHTML = `
                                     class="card-icon">
 
                                     <h3 class="h3">
-                                    <a  href= "./assets/games/Jo__Drone__Shooter/index.html" target = "_blank" class="card-title">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Drone__Shooter/index.html")' class="card-title">
                                         Click Here to <span class="span">Play</span>
                                     </a>
                                     </h3>
@@ -186,7 +196,8 @@ allReleased.innerHTML = `
                                 <div class="card-content">
 
                                     <h3 class="h3">Must Try
-                                    <a href= "./assets/games/Jo__Enemy__Killer/index.html" target = "_blank" class="card-title" tabindex="-1">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Enemy__Killer/index.html")' class="card-title" tabindex="-1">
                                          <span class="span">Enemy Forest Eater  </span>
                                     </a>
                                     </h3>
@@ -205,7 +216,8 @@ allReleased.innerHTML = `
                                     class="card-icon">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Enemy__Killer/index.html" target = "_blank" class="card-title">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Enemy__Killer/index.html")' class="card-title">
                                         Click Here to <span class="span">Play</span>
                                     </a>
                                     </h3>
@@ -234,7 +246,8 @@ allReleased.innerHTML = `
                                 <div class="card-content">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Fighting__Game/index.html" target = "_blank" class="card-title" tabindex="-1">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Fighting__Game/index.html")' class="card-title" tabindex="-1">
                                          <span class="span">SAMURAI FIGHTING  </span>
                                     </a>
                                     </h3>
@@ -253,7 +266,8 @@ allReleased.innerHTML = `
                                     class="card-icon">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Fighting__Game/index.html" target = "_blank" class="card-title">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Fighting__Game/index.html")' class="card-title">
                                         Click Here to <span class="span">Play</span>
                                     </a>
                                     </h3>
@@ -282,7 +296,8 @@ allReleased.innerHTML = `
                                 <div class="card-content">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Fires__Blaster/index.html" target = "_blank" class="card-title" tabindex="-1">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Fires__Blaster/index.html")' class="card-title" tabindex="-1">
                                          <span class="span">Fire Blaster  </span>
                                     </a>
                                     </h3>
@@ -301,7 +316,8 @@ allReleased.innerHTML = `
                                     class="card-icon">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Fires__Blaster/index.html" target = "_blank" class="card-title">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Fires__Blaster/index.html")' class="card-title">
                                         Click Here to <span class="span">Play</span>
                                     </a>
                                     </h3>
@@ -329,7 +345,8 @@ allReleased.innerHTML = `
                                 <div class="card-content">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Space__Invaders/index.html" target = "_blank" class="card-title" tabindex="-1">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Space__Invaders/index.html")' class="card-title" tabindex="-1">
                                          <span class="span">Space Invaders  </span>
                                     </a>
                                     </h3>
@@ -348,7 +365,8 @@ allReleased.innerHTML = `
                                     class="card-icon">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Space__Invaders/index.html" target = "_blank" class="card-title">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Space__Invaders/index.html")' class="card-title">
                                         Click Here to <span class="span">Play</span>
                                     </a>
                                     </h3>
@@ -376,7 +394,8 @@ allReleased.innerHTML = `
                                 <div class="card-content">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Pacman__Game/index.html" target = "_blank" class="card-title" tabindex="-1">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Pacman__Game/index.html")' class="card-title" tabindex="-1">
                                          <span class="span">Pacman  </span>
                                     </a>
                                     </h3>
@@ -395,7 +414,8 @@ allReleased.innerHTML = `
                                     class="card-icon">
 
                                     <h3 class="h3">
-                                    <a href= "./assets/games/Jo__Pacman__Game/index.html" target = "_blank" class="card-title">
+                                    <a onclick=
+                                    'fullScreen("./assets/games/Jo__Pacman__Game/index.html")' class="card-title">
                                         Click Here to <span class="span">Play</span>
                                     </a>
                                     </h3>
