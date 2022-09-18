@@ -47,7 +47,7 @@ mustTry.innerHTML = `
                         <div class="latest-game-card">
 
                         <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
-                            <img src="assets/img/latest-game-1.jpg" width="400" height="470" loading="lazy"
+                            <img src = "assets/img/drone.png" width="400" height="470" loading="lazy"
                             alt="Drone Galaxy Shooter" class="img-cover">
                         </figure>
 
@@ -74,7 +74,7 @@ mustTry.innerHTML = `
                         <div class="latest-game-card">
 
                         <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
-                            <img src="assets/img/latest-game-1.jpg" width="400" height="470" loading="lazy"
+                            <img src="assets/img/enemy.png" width="400" height="470" loading="lazy"
                             alt="Enemy Forest Hunter" class="img-cover">
                         </figure>
 
@@ -101,7 +101,7 @@ mustTry.innerHTML = `
                         <div class="latest-game-card">
 
                         <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
-                            <img src="assets/img/latest-game-1.jpg" width="400" height="470" loading="lazy"
+                            <img src="assets/img/samurai.png" width="400" height="470" loading="lazy"
                             alt="Samurai Fighting" class="img-cover">
                         </figure>
 
