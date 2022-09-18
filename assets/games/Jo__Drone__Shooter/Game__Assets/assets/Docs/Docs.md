@@ -8,7 +8,7 @@
 
 ## --> Controls
 
-### Press 'Left-Arrow' for Moving left<br>Press 'Right-Arrow' for Moving right<br>Press 'Spacebar' for Shoot<br>
+### &emsp;&emsp;Press 'Left-Arrow' for Moving left<br>&emsp;&emsp;Press 'Right-Arrow' for Moving right<br>&emsp;&emsp;Press 'Down-Arrow' for Moving Down<br>&emsp;&emsp;Press 'Spacebar' for Shoot<br>
 
 
 ## --> Game Features
@@ -25,6 +25,6 @@
 #### -->  -1 On Hit of Enemy to Player
 
 
-## --> Winnig  Condition
+## --> Winning  Condition
 
 #### --> The Players Gets 210 Seconds in which if the player score more than 999 Points the Players wins otherwise lose the game
