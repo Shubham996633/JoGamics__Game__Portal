@@ -4,7 +4,7 @@
 
 ![game](https://user-images.githubusercontent.com/65014926/190907050-5ba03184-282c-4713-a447-9fca09759249.png)
 
-## To Visit Click Here : <a href = "../../index.html">Drone Galaxy Shooter</a>
+
 
 ## --> Controls
 
