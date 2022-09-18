@@ -462,7 +462,7 @@ body {
   margin-block-end: 90px;
 }
 
-.featured-game .has-scrollbar { gap: 0; }
+.featured-game .has-scrollbar { gap: 30px; }
 
 .featured-game-card { position: relative; }
 

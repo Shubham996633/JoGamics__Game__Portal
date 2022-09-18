@@ -5,7 +5,7 @@
 ![image](https://user-images.githubusercontent.com/65014926/190913598-63a037ee-f7b9-420d-8e79-27838ca2b6e1.png)
 
 
-## To Visit Click Here : <a href = "#">Pacman Game</a>
+## To Visit Click Here : <a href = "../../index.html">Pacman Game</a>
 
 ## --> Controls
 

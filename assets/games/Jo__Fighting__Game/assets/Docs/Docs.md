@@ -7,7 +7,7 @@
 
 
 
-## To Visit Click Here : <a href = "#">Samurai Fighting Game</a>
+## To Visit Click Here : <a href = "../../index.html">Samurai Fighting Game</a>
 
 ## --> Controls
 
