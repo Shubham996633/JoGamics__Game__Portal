@@ -19,7 +19,7 @@
                     <!-- Favicons -->
 
 
-  <link rel="shortcut icon" href="" type="image/svg+xml">
+  <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
                         <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -43,16 +43,31 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#live" class="navbar-link skewBg" data-nav-link>Games</a>
+              <a href="#must" class="navbar-link skewBg" data-nav-link>Must Try</a>
             </li>
 
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+                <a href="#released" class="navbar-link skewBg" data-nav-link>All Released</a>
+              </li>
+
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link skewBg" data-nav-link>Contact</a>
             </li>
 
           </ul>
         </nav>
+
+
+        <div class="header-actions">
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+              <ion-icon name="menu-outline" class="menu"></ion-icon>
+              <ion-icon name="close-outline" class="close"></ion-icon>
+            </button>
+  
+          </div>
 
    
 
@@ -94,7 +109,7 @@
 
       <div class="section-wrapper">
 
-        <section class="section latest-game" aria-label="latest game">
+        <section class="section latest-game" aria-label="latest game" id = "must">
           <div class="container">
 
             <p class="section-subtitle">Must Try These</p>
@@ -189,17 +204,10 @@
       </div>
 
 
-
-
-
-      <!-- 
-        - #FEATURED GAME
-      -->
-
-      <section class="section featured-game" id="features" aria-label="featured game">
+      <section class="section featured-game" id="released" aria-label="featured game" style="background-image: url('./assets/img/shop-bg.jpg')">
         <div class="container">
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" style="color: white;">
             All Released <span class="span">Games</span>
           </h2>
 
@@ -400,14 +408,6 @@
     </article>
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
   <footer class="footer">
 
     <div class="footer-bottom">
@@ -417,20 +417,11 @@
           &copy; JoGamics. All Right Reserved by <em>Shubham Maurya</em>
         </p>
 
-
-
       </div>
     </div>
 
-  </footer>
+  </footer id = "contact">
 
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
 
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="caret-up"></ion-icon>
@@ -443,7 +434,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
 
   <!-- 
     - ionicon link
