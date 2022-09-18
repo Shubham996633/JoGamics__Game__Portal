@@ -435,3 +435,16 @@ allReleased.innerHTML = `
 
 
                         `
+
+
+const letStart = document.querySelector('.letsStart')
+
+letStart.addEventListener('click', startscroll)
+
+function startscroll(){
+    
+    var offsets = document.getElementById("scrolltarget").offsetTop
+       
+    window.scroll(0,offsets);
+    console.log('yo')
+}
