@@ -18,30 +18,45 @@ const pacmanWin = document.querySelector('.pacman-win')
 var widths = [0, 999, 3840];
 
 function resizeFn() {
-    if (window.innerWidth<widths[1]) {
-       
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Your Screen Size must be greator than 999px to run the Game',
-            footer: 'Please Try on a device whose width Greator than 999px '
-          })
+  if (window.innerWidth<widths[1]) {
+      start.style.display = 'none'
+     
+      Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Your Screen Size must be greator than 999px to run the Game',
+          footer: 'Please Try on a device whose width Greator than 999px '
+        })
+
+      console.log('hat bee')
 
 
 
 
-    }else{
-        setTimeout(() => {
-            document.querySelector('.start-game').style.display = 'none'
-            document.querySelector('.game__play').style.display = 'block'
-            animate()
-            
-        }, 639);
-    }
+  }else{
+      start.style.display = 'block'
+    
+
+      
+  }
 }
-start.addEventListener('click', resizeFn)
-// window.onresize = resizeFn;
-// resizeFn();
+
+function startgame(){
+  setTimeout(() => {
+      document.querySelector('.start-game').style.display = 'none'
+      document.querySelector('.fighter').style.display = 'inline-block'
+      animate()
+
+ 
+      decreaseTimer()
+
+     
+      
+  }, 639);
+}
+start.addEventListener('click', startgame)
+window.onresize = resizeFn;
+resizeFn();
 const c = canvas.getContext('2d')
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight

@@ -8,6 +8,7 @@ var widths = [0, 999, 3840];
 
 function resizeFn() {
     if (window.innerWidth<widths[1]) {
+        start.style.display = 'none'
        
         Swal.fire({
             icon: 'error',
@@ -22,24 +23,31 @@ function resizeFn() {
 
 
     }else{
-        setTimeout(() => {
-            document.querySelector('.start-game').style.display = 'none'
-            document.querySelector('.fighter').style.display = 'inline-block'
-            animate()
+        start.style.display = 'block'
+      
 
-       
-            decreaseTimer()
-
-           
-            
-        }, 639);
+        
     }
 }
 
+function startgame(){
+    setTimeout(() => {
+        document.querySelector('.start-game').style.display = 'none'
+        document.querySelector('.fighter').style.display = 'inline-block'
+        animate()
 
-start.addEventListener('click', resizeFn)
-// window.onresize = resizeFn;
-// resizeFn();
+   
+        decreaseTimer()
+
+       
+        
+    }, 639);
+}
+
+
+start.addEventListener('click', startgame)
+window.onresize = resizeFn;
+resizeFn();
 
 c.fillRect(0, 0, canvas.width, canvas.height)
 

@@ -9,6 +9,7 @@ var widths = [0, 999, 3840];
 
 function resizeFn() {
     if (window.innerWidth<widths[1]) {
+        start.style.display = 'none'
        
         Swal.fire({
             icon: 'error',
@@ -16,22 +17,36 @@ function resizeFn() {
             text: 'Your Screen Size must be greator than 999px to run the Game',
             footer: 'Please Try on a device whose width Greator than 999px '
           })
-
-
-
-
+  
+        console.log('hat bee')
+  
+  
+  
+  
     }else{
-        setTimeout(() => {
-            document.querySelector('.start-game').style.display = 'none'
-            document.querySelector('.game__play').style.display = 'block'
-            animate()
-            
-        }, 639);
+        start.style.display = 'block'
+      
+  
+        
     }
-}
-start.addEventListener('click', resizeFn)
-// window.onresize = resizeFn;
-// resizeFn();
+  }
+  
+  function startgame(){
+    setTimeout(() => {
+        document.querySelector('.start-game').style.display = 'none'
+        document.querySelector('.fighter').style.display = 'inline-block'
+        animate()
+  
+   
+        decreaseTimer()
+  
+       
+        
+    }, 639);
+  }
+  start.addEventListener('click', startgame)
+  window.onresize = resizeFn;
+  resizeFn();
 
 canvas.width = innerWidth
 canvas.height = innerHeight

@@ -310,7 +310,12 @@ button{
     font-size: 2.1rem;
     background: black;
 }
-
+.home__images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
 
 @media screen and (max-width:350px) {
     .container{
@@ -446,6 +451,13 @@ button{
         margin-left: 69%;
         margin-top: -50%;
         padding-top: -50%;
+    }
+
+    .home__images{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        display: block;
     }
    
 }
