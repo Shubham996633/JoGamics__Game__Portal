@@ -7,7 +7,7 @@
 
 ## --> Controls
 
-### &emsp;&emsp;Press 'Left-Arrow' for Moving left<br>&emsp;&emsp;Press 'Right-Arrow' for Moving right<br>&emsp;&emsp;Press 'Spacebar' to Enter in Attack Mode<br>&emsp;&emsp;Press 'DownArrow' to Sit ( temporarily  pause ) <br>
+### &emsp;&emsp;Press 'Left-Arrow' for Moving left<br>&emsp;&emsp;Press 'Right-Arrow' for Moving right<br>&emsp;&emsp;Press 'Spacebar' to Enter in Attack Mode<br>&emsp;&emsp;Press 'DownArrow' to Sit ( temporarily  pause ) <br>&emsp;&emsp;Press 'D/d' to activate Debugger Mode <br>
 
 
 ## --> Game Features

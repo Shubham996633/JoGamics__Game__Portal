@@ -5,6 +5,7 @@ const tryAgain = document.querySelector('.try-again')
 const result = document.querySelector('.result')
 const endImage = document.querySelector('.end-image')
 const powermode = document.querySelector('.powermode')
+const run = document.querySelector('.run')
 
 tryAgain.addEventListener('click', revertGame)
 function revertGame(){
@@ -23,7 +24,7 @@ export class InputHandler {
                     e.key === ' '
                 )   && this.keys.indexOf(e.key) === -1) {
                 this.keys.push(e.key)
-            }else if (e.key === 'd') this.game.debug = !this.game.debug
+            }else if (e.key === 'd' || e.key === 'D') this.game.debug = !this.game.debug
 
         })
 

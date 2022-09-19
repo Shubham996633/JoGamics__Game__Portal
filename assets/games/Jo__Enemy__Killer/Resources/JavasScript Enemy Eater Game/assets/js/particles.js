@@ -41,6 +41,9 @@ export class Dust extends Particles{
         context.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         context.fillStyle = this.color
         context.fill()
+        const run = document.querySelector('.run')
+        run.play()
+
     }
 }
 

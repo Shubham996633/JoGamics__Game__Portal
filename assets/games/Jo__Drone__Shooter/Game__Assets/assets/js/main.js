@@ -38,7 +38,7 @@ window.addEventListener('load', function(){
                 }else if (e.key === ' '){
                     
                     this.game.player.shootTop()
-                }else if (e.key === 'd'){
+                }else if (e.key === 'd' || e.key === 'D'){
                     this.game.debug = !this.game.debug
                 }
             })

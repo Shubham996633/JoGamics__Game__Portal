@@ -8,7 +8,7 @@
 
 ## --> Controls
 
-### &emsp;&emsp;Press 'Left-Arrow' for Moving left<br>&emsp;&emsp;Press 'Right-Arrow' for Moving right<br>&emsp;&emsp;Press 'Down-Arrow' for Moving Down<br>&emsp;&emsp;Press 'Spacebar' for Shoot<br>
+### &emsp;&emsp;Press 'Left-Arrow' for Moving left<br>&emsp;&emsp;Press 'Right-Arrow' for Moving right<br>&emsp;&emsp;Press 'Down-Arrow' for Moving Down<br>&emsp;&emsp;Press 'Spacebar' for Shoot<br>&emsp;&emsp;Press 'D/d' to activate Debugger Mode<br>
 
 
 ## --> Game Features
