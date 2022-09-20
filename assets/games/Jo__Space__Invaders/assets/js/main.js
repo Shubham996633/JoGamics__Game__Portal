@@ -34,7 +34,7 @@ function resizeFn() {
   function startgame(){
     setTimeout(() => {
         document.querySelector('.start-game').style.display = 'none'
-        document.querySelector('.fighter').style.display = 'inline-block'
+        document.querySelector('.game__play').style.display = 'inline-block'
         animate()
   
    
