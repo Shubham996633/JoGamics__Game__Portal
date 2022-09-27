@@ -51,6 +51,8 @@ const mustTry = document.querySelector('.must__try')
 mustTry.innerHTML = `
 
                         <li class="scrollbar-item">
+                        <a onclick=
+                            'fullScreen("./assets/games/Jo__Drone__Shooter/index.html");' class="card-title">
                         <div class="latest-game-card">
 
                         <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
@@ -63,8 +65,7 @@ mustTry.innerHTML = `
                        
 
                             <h3 class="h3">
-                            <a onclick=
-                            'fullScreen("./assets/games/Jo__Drone__Shooter/index.html");' class="card-title">Drone Galaxy Shooter <span class="span">Action</span></a>
+                            Drone Galaxy Shooter <span class="span">Action</span>
                             </h3>
 
                             <p class="card-price">
@@ -74,11 +75,14 @@ mustTry.innerHTML = `
                         </div>
 
                         </div>
+                        </a>
                         </li>
 
 
 
                         <li class="scrollbar-item">
+                        <a onclick=
+                            'fullScreen("./assets/games/Jo__Enemy__Killer/index.html")' class="card-title">
                         <div class="latest-game-card">
 
                         <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
@@ -91,8 +95,7 @@ mustTry.innerHTML = `
                             
 
                             <h3 class="h3">
-                            <a onclick=
-                            'fullScreen("./assets/games/Jo__Enemy__Killer/index.html")' class="card-title">Enemy Forest Eater <span class="span">Action</span></a>
+                            Enemy Forest Eater <span class="span">Action</span>
                             </h3>
 
                             <p class="card-price">
@@ -102,11 +105,14 @@ mustTry.innerHTML = `
                         </div>
 
                         </div>
+                        </a>
                         </li>
 
 
 
                         <li class="scrollbar-item">
+                        <a onclick=
+                            'fullScreen("./assets/games/Jo__Fighting__Game/index.html")' class="card-title">
                         <div class="latest-game-card">
 
                         <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
@@ -119,8 +125,7 @@ mustTry.innerHTML = `
                             
 
                             <h3 class="h3">
-                            <a onclick=
-                            'fullScreen("./assets/games/Jo__Fighting__Game/index.html")' class="card-title">Samurai Fighting <span class="span">Action</span></a>
+                            Samurai Fighting <span class="span">Action</span>
                             </h3>
 
                             <p class="card-price">
@@ -130,6 +135,7 @@ mustTry.innerHTML = `
                         </div>
 
                         </div>
+                        </a>
                         </li>
 
                     `
