@@ -7,7 +7,7 @@
 ![image](https://user-images.githubusercontent.com/65014926/190945369-8cc3c6db-3161-4ad7-86d9-83faa1a1ab81.png)
 <br>
 
-# To Visit Click Here : <a href = "https://shubham996633.github.io/JoGamics__Game__Portal/">JoGamics</a>
+# To Visit Click Here : <a href = "https://bit.ly/JoGamics">JoGamics</a>
 
 ## Complete Overview
 
